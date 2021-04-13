@@ -11,8 +11,8 @@ message = send()
 
 client = Client(account_sid, auth_token)
 client.messages.create(
-            to= "5106725821",
-            from_="6789296242",
+            to= "SEND_NUMBER",
+            from_="FROM_NUMBER",
             body = message
         )
 
@@ -27,8 +27,8 @@ while True:
     if pass_time > alarm:
         print("Sent")
         client.messages.create(
-            to= "5106725821",
-            from_="6789296242",
+            to= "SEND_NUMBER",
+            from_="FROM_NUMBER",
             body = message
         )
 
